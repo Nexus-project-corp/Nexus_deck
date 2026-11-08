@@ -249,7 +249,7 @@ footer {
 
 <main>
     <div class="hero">
-        <img src="assets/nexi.png" alt="NEXI mascot">
+        <img id="nexi" src="assets/nexi.png" alt="NEXI mascot">
 
         <h1>NEXUS DECK</h1>
 
@@ -345,6 +345,23 @@ footer {
 <footer>
     NEXUS DECK © 2026 | POWERED BY NEXI
 </footer>
+
+<script>
+const nexi = document.getElementById("nexi");
+
+function blinkNexi() {
+    nexi.src = "assets/nexi_blink.png";
+
+    setTimeout(() => {
+        nexi.src = "assets/nexi.png";
+    }, 180);
+
+    const nextBlink = Math.random() * 3000 + 2500;
+    setTimeout(blinkNexi, nextBlink);
+}
+
+setTimeout(blinkNexi, 3000);
+</script>
 
 </body>
 </html>
