@@ -1,0 +1,218 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NEXUS DECK | Official Website</title>
+
+<style>
+:root {
+    --green: #80ff62;
+    --background: #080a08;
+    --panel: #111611;
+    --text: #e4e9e2;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: var(--background);
+    color: var(--text);
+    font-family: "Courier New", monospace;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 7%;
+    border-bottom: 2px solid var(--green);
+}
+
+.logo {
+    color: var(--green);
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.status {
+    color: var(--green);
+    font-size: 12px;
+}
+
+.hero {
+    min-height: 560px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero img {
+    width: 170px;
+    height: 170px;
+    object-fit: contain;
+    margin-bottom: 25px;
+}
+
+.hero h1 {
+    color: var(--green);
+    font-size: clamp(35px, 7vw, 65px);
+    letter-spacing: 5px;
+}
+
+.hero p {
+    margin-top: 20px;
+    color: #aab4a8;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 35px;
+    padding: 15px 30px;
+    background: var(--green);
+    color: #080a08;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid var(--green);
+    transition: 0.2s;
+}
+
+.button:hover {
+    background: transparent;
+    color: var(--green);
+}
+
+section {
+    padding: 65px 8%;
+}
+
+h2 {
+    color: var(--green);
+    margin-bottom: 30px;
+    font-size: 25px;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: var(--panel);
+    border: 1px solid #31512c;
+    padding: 25px;
+}
+
+.card h3 {
+    color: var(--green);
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #aab4a8;
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+.about {
+    text-align: center;
+    background: #0d110d;
+}
+
+footer {
+    padding: 25px;
+    text-align: center;
+    border-top: 1px solid #31512c;
+    color: #778477;
+    font-size: 12px;
+}
+
+@media(max-width: 600px) {
+    header {
+        padding: 18px 5%;
+    }
+    .status {
+        font-size: 9px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">NEXUS DECK</div>
+    <div class="status">● SYSTEM ONLINE</div>
+</header>
+
+<main>
+    <div class="hero">
+        <img src="assets/nexi.png" alt="NEXI mascot">
+
+        <h1>NEXUS DECK</h1>
+
+        <p>
+            YOUR PERSONAL TECHNICAL DECK.<br>
+            TOOLS, SYSTEM INFORMATION AND MORE.
+        </p>
+
+        <a class="button" href="#features">
+            EXPLORE THE DECK
+        </a>
+    </div>
+
+    <section id="features">
+        <h2>// FEATURES</h2>
+
+        <div class="features">
+            <div class="card">
+                <h3>01 / SYSTEM</h3>
+                <p>Explore your computer's system information.</p>
+            </div>
+
+            <div class="card">
+                <h3>02 / NETWORK</h3>
+                <p>Discover useful information about your network.</p>
+            </div>
+
+            <div class="card">
+                <h3>03 / TOOLS</h3>
+                <p>A collection of useful technical utilities.</p>
+            </div>
+
+            <div class="card">
+                <h3>04 / SETTINGS</h3>
+                <p>Customize your Nexus Deck experience.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="about">
+        <h2>// ABOUT NEXUS DECK</h2>
+        <p>
+            A personal software project built with Python
+            and Pygame.<br><br>
+            Designed to bring useful tools together
+            in one retro-inspired interface.
+        </p>
+    </section>
+</main>
+
+<footer>
+    NEXUS DECK © 2026 | POWERED BY NEXI
+</footer>
+
+</body>
+</html>
