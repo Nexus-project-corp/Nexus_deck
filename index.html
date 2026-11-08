@@ -141,7 +141,6 @@ h2 {
     flex-wrap: wrap;
 }
 
-
 .nexi-section img {
     width: 220px;
     height: 220px;
@@ -189,7 +188,6 @@ h2 {
     font-size: 11px;
 }
 
-
 .download {
     text-align: center;
     background: #080d08;
@@ -233,6 +231,7 @@ footer {
     header {
         padding: 18px 5%;
     }
+
     .status {
         font-size: 9px;
     }
@@ -248,8 +247,9 @@ footer {
 </header>
 
 <main>
+
     <div class="hero">
-        <img id="nexi" src="assets/nexi.jpg">
+        <img id="nexi" src="assets/nexi.jpg" alt="NEXI mascot">
 
         <h1>NEXUS DECK</h1>
 
@@ -259,8 +259,8 @@ footer {
         </p>
 
         <a class="button" href="https://github.com/Nexus-project-corp/Nexus_deck/releases/download/v1.0.0/NexusDeck.v1.0.0.exe">
-    EXPLORE THE DECK
-</a>
+            EXPLORE THE DECK
+        </a>
     </div>
 
     <section id="features">
@@ -291,17 +291,17 @@ footer {
 
     <section class="about">
         <h2>// ABOUT NEXUS DECK</h2>
+
         <p>
             A personal software project built with Python
             and Pygame.<br><br>
             Designed to bring useful tools together
             in one retro-inspired interface.
         </p>
-    
     </section>
 
     <section class="nexi-section">
-        <img src="assets/nexi.png" alt="NEXI mascot">
+        <img src="assets/nexi.jpg" alt="NEXI mascot">
 
         <div class="nexi-info">
             <h2>// MEET NEXI</h2>
@@ -339,8 +339,8 @@ footer {
             </a>
         </div>
     </section>
-</main>
 
+</main>
 
 <footer>
     NEXUS DECK © 2026 | POWERED BY NEXI
@@ -350,10 +350,10 @@ footer {
 const nexi = document.getElementById("nexi");
 
 function blinkNexi() {
-    nexi.src = "assets/nexi_blink.png";
+    nexi.src = "assets/nexi_blink.jpg";
 
     setTimeout(() => {
-        nexi.src = "assets/nexi.png";
+        nexi.src = "assets/nexi.jpg";
     }, 180);
 
     const nextBlink = Math.random() * 3000 + 2500;
