@@ -141,11 +141,27 @@ h2 {
     flex-wrap: wrap;
 }
 
+
 .nexi-section img {
     width: 220px;
     height: 220px;
     object-fit: contain;
     filter: drop-shadow(0 0 12px #80ff6240);
+    animation: nexi-idle 4s ease-in-out infinite;
+}
+
+@keyframes nexi-idle {
+    0%, 90%, 100% {
+        transform: translateY(0);
+    }
+
+    94% {
+        transform: translateY(-4px);
+    }
+
+    97% {
+        transform: translateY(0);
+    }
 }
 
 .nexi-info {
